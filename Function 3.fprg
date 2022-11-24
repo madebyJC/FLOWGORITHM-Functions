@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="JANCARLOPAREDES"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-22 07:19:14 pm"/>
+        <attribute name="created" value="SkFOQ0FSTE9QQVJFREVTO0RFU0tUT1AtNzQ1R1ZOMzsyMDIyLTExLTIxOzA4OjI5OjA1IHBtOzM0NzQ="/>
+        <attribute name="edited" value="SkFOQ0FSTE9QQVJFREVTO0RFU0tUT1AtNzQ1R1ZOMzsyMDIyLTExLTIyOzA3OjE5OjE0IHBtOzM7MzU4Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Ascending and Descending order of 1 to 20&quot;" newline="True"/>
+            <call expression="ASC()"/>
+            <call expression="DES()"/>
+        </body>
+    </function>
+    <function name="ASC" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="loop" type="Integer" array="False" size=""/>
+            <output expression="&quot;ASCENDING&quot;" newline="True"/>
+            <for variable="loop" start="0" end="19&#13;&#10;" direction="inc" step="1">
+                <output expression="loop" newline="True"/>
+            </for>
+        </body>
+    </function>
+    <function name="DES" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="loop" type="Integer" array="False" size=""/>
+            <output expression="&quot;DESCENDING&quot;" newline="True"/>
+            <for variable="loop" start="0" end="-19" direction="dec" step="1">
+                <output expression="loop" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

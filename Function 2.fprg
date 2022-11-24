@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="JANCARLOPAREDES"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-21 08:27:25 pm"/>
+        <attribute name="created" value="SkFOQ0FSTE9QQVJFREVTO0RFU0tUT1AtNzQ1R1ZOMzsyMDIyLTExLTIxOzA4OjA3OjQwIHBtOzM0Njk="/>
+        <attribute name="edited" value="SkFOQ0FSTE9QQVJFREVTO0RFU0tUT1AtNzQ1R1ZOMzsyMDIyLTExLTIxOzA4OjI3OjI1IHBtOzE7MzU4Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="intA, intB" type="Integer" array="False" size=""/>
+            <assign variable="intA" expression="100"/>
+            <assign variable="intB" expression="20"/>
+            <output expression="&quot;Integer 100 and Integer 20 will be used addition, subtraction, multiplication, and division&quot;" newline="True"/>
+            <call expression="SUM(intA, intB)"/>
+            <call expression="DIFF(intA, intB)"/>
+            <call expression="PROD(intA, intB)"/>
+            <call expression="QUO(intA, intB)"/>
+        </body>
+    </function>
+    <function name="DIFF" type="None" variable="">
+        <parameters>
+            <parameter name="intA" type="Integer" array="False"/>
+            <parameter name="intB" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="diffResult" type="Real" array="False" size=""/>
+            <assign variable="diffResult" expression="intA - intB"/>
+            <output expression="&quot;Subtraction Result: &quot;" newline="True"/>
+            <output expression="diffResult" newline="True"/>
+        </body>
+    </function>
+    <function name="PROD" type="None" variable="">
+        <parameters>
+            <parameter name="intA" type="Integer" array="False"/>
+            <parameter name="intB" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="prodResult" type="Real" array="False" size=""/>
+            <assign variable="prodResult" expression="intA * intB"/>
+            <output expression="&quot;Multiplication Result: &quot;" newline="True"/>
+            <output expression="prodResult" newline="True"/>
+        </body>
+    </function>
+    <function name="QUO" type="None" variable="">
+        <parameters>
+            <parameter name="intA" type="Integer" array="False"/>
+            <parameter name="intB" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="quoResult" type="Real" array="False" size=""/>
+            <assign variable="quoResult" expression="intA / intB"/>
+            <output expression="&quot;Division Result: &quot;" newline="True"/>
+            <output expression="quoResult" newline="True"/>
+        </body>
+    </function>
+    <function name="SUM" type="None" variable="sumResult">
+        <parameters>
+            <parameter name="intA" type="Integer" array="False"/>
+            <parameter name="intB" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="sumResult" type="Integer" array="False" size=""/>
+            <assign variable="sumResult" expression="intA + intB"/>
+            <output expression="&quot;Addition Result: &quot;" newline="True"/>
+            <output expression="sumResult" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

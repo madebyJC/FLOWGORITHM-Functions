@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="JANCARLOPAREDES"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-21 08:05:32 pm"/>
+        <attribute name="created" value="SkFOQ0FSTE9QQVJFREVTO0RFU0tUT1AtNzQ1R1ZOMzsyMDIyLTExLTIxOzA3OjUyOjQwIHBtOzM0Njg="/>
+        <attribute name="edited" value="SkFOQ0FSTE9QQVJFREVTO0RFU0tUT1AtNzQ1R1ZOMzsyMDIyLTExLTIxOzA3OjU5OjU3IHBtOzE7RVJPTjtFUk9OTk4yMDsyMDIyLTExLTIxOzAyOjA5OjAzIGFtO1BlbnVzX0NQRTExLUZ1bmN0aW9uMS5mcHJnOzgyMzg="/>
+        <attribute name="edited" value="SkFOQ0FSTE9QQVJFREVTO0RFU0tUT1AtNzQ1R1ZOMzsyMDIyLTExLTIxOzA4OjA1OjMyIHBtOzE7MzU3Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <call expression="NAME()"/>
+            <call expression="AGE()"/>
+        </body>
+    </function>
+    <function name="AGE" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ageInput" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter your age here: &quot;" newline="True"/>
+            <input variable="ageInput"/>
+            <output expression="&quot;Your age is: &quot; &amp; ageInput" newline="True"/>
+            <if expression="ageInput &lt; 18">
+                <then>
+                    <output expression="&quot;You are a minor&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="ageInput &gt;= 18 &amp;&amp;&#13;&#10;ageInput &lt;= 59">
+                        <then>
+                            <output expression="&quot;You are a legal age&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;You are a senior age&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="NAME" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nameInput" type="String" array="False" size=""/>
+            <output expression="&quot;Enter you name here: &quot;" newline="True"/>
+            <input variable="nameInput"/>
+            <output expression="&quot;Your name is: &quot; &amp; nameInput" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
